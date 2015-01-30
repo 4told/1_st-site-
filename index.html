@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+
+    <meta name="discription" content="" charset="utf-8"/>
+    <title>turism</title>
+    <!--fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/792.css" type="text/css"/>
+    <link rel="stylesheet" href="css/320.css" type="text/css"/>
+    <!--jquery-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/input_show.js" type="text/javascript"></script>
+    <script src="js/country-holder.js" type="text/javascript"></script>
+    <script >
+        $(document).ready(function(){
+            $(".company").click(function(){
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="top-background">
+                <div class="header-top">
+                    <div class="min-width">
+                        <img src="images/offshore.png" class="offshore" alt="logo"/>
+                        <img src="images/tell.png" class="tell" alt="phone"/>
+                    </div>
+                </div>
+                <div class="header-middle">
+                    <div class="min-width">
+                        <p>Офшорные счета и компании</p>
+                        <ul>
+                            <li><a class="entry" href="#">Вход</a></li>
+                            <li><a class="contact" href="#">Контакты</a></li>
+                            <li><a class="company" href="#">О компании</a></li>
+                            <li><a class="language" href="#">Русский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="min-width">
+                    <ul class="navigation">
+                        <li><a onclick="$('.country').slideToggle('slow');" class="company" href="javascript://">Готовые компании</a></li>
+                        <li><a onclick="$('.country').slideToggle('slow');" class="bank"  href="javascript://">Счет в банке</a></li>
+                        <li><a onclick="$('.country').slideToggle('slow');" class="all"  href="javascript://">Все юрисдикции</a></li>
+                        <li><a class="search" href="#">Поиск</a></li>
+                    </ul>
+                </div>
+                <div class="search-holder">
+                    <div class="top-search-holder">
+                        <form action="">
+                            <input type="text"  type="text" value="Поиск"
+                            onfocus="if (this.value=='Поиск') this.value='' "
+                            onblur="if (this.value==''){this.value='Поиск'}" />
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                    <div class="bottom-search-holder">
+                        <div class="roundedbox">
+                            <div class="roundedOne">
+                                <input type="checkbox" value="none" id="roundedOne" name="check" />
+                                <label for="roundedOne"></label>
+                            </div>
+                            <p class="text">По юрисдикции</p>
+                        </div>
+                        <div class="roundedbox">
+                            <div class="roundedOne">
+                                <input type="checkbox" value="none" id="roundedTwo" name="check" />
+                                <label for="roundedTwo"></label>
+                            </div>
+                            <p class="text">По дате регистраации</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="country">
+                <div class="min-width">
+                    <div class="coloms">
+                        <div class="country-holder"><a href="#"><span class="counter">37</span><img src="images/country/british_o.jpg" alt=""/></a><span class="name">Британские Виргински острова</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/new_zilland.jpg" alt=""/></a><span class="name">Новая Зеландия</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/mavrikiy.jpg" alt=""/></a><span class="name">Маврикий</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/gonkong.jpg" alt=""/></a><span class="name">Гонконг</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/nevis.jpg" alt=""/></a><span class="name">Невис</span></div>
+                    </div>
+                    <div class="coloms">
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/saint-winset.jpg" alt=""/></a><span class="name">Сент-Винсент и Гренадины</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/englang.jpg" alt=""/></a><span class="name">Великобритания</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/vengriya.jpg" alt=""/></a><span class="name">Венгрия</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/latviya.jpg" alt=""/></a><span class="name">Латвия</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/kipr.jpg" alt=""/></a><span class="name">Кипр</span></div>
+                    </div>
+                    <div class="coloms">
+                        <div class="country-holder"><a href="#"><span class="counter">15</span><img src="images/country/seyhelsk.jpg" alt=""/></a><span class="name">Сейшельские острова</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/saint-lysiya.jpg" alt=""/></a><span class="name">Сент-Люсия</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/vanuatu.jpg" alt=""/></a><span class="name">Вануату</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/canada.jpg" alt=""/></a><span class="name">Канада</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/sudan.jpg" alt=""/></a><span class="name">Судан</span></div>
+                    </div>
+                    <div class="coloms">
+                        <div class="country-holder"><a href="#"><span class="counter">7</span><img src="images/country/marshall.jpg" alt=""/></a><span class="name">Маршалловы острова</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">13</span><img src="images/country/bulgary.jpg" alt=""/></a><span class="name">Болгария</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/angiliya.jpg" alt=""/></a><span class="name">Ангилья</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/panama.jpg" alt=""/></a><span class="name">Панама</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/oae.jpg" alt=""/></a><span class="name">ОАЭ</span></div>
+                    </div>
+                    <div class="coloms">
+                        <div class="country-holder"><a href="#"><span class="counter">3</span><img src="images/country/kayman.jpg" alt=""/></a><span class="name">Каймановы острова</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">1</span><img src="images/country/singapur.jpg" alt=""/></a><span class="name">Сингапур</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/estoniya.jpg" alt=""/></a><span class="name">Эстония</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/china.jpg" alt=""/></a><span class="name">Китай</span></div>
+                        <div id="country-holder" class="country-holder"><a href="#"><span class="counter">737</span><img src="images/country/all-country.png" alt=""/></a><span class="name">Все юрисдикции</span></div>
+                    </div>
+                    <div class="coloms">
+                        <div class="country-holder"><a href="#"><span class="counter">3</span><img src="images/country/bagamy.jpg" alt=""/></a><span class="name">Багамские Острова</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/diminicana.jpg" alt=""/></a><span class="name">Доминикана</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/austriya.jpg" alt=""/></a><span class="name">Австрия</span></div>
+                        <div class="country-holder"><a href="#"><span class="counter">5</span><img src="images/country/beliz.jpg" alt=""/></a><span class="name">Белиз</span></div>
+                        <a onclick="$('.country').slideToggle('slow');" class="arrow"  href="javascript://">свернуть</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="banner">
+                <div class="min-width">
+                    <div class="block">
+                        <h1>Лучшее предложение месяца для бизнеса всего за $957</h1>
+                        <p>Компания с номинальным сервисом</p>
+                        <p class="small">Готовая компания на маршаловых островах осуществляет свою
+                            деятельность в условиях оптимизированного налогообложения,
+                            конфиденциальности и полной налоговой секретности</p>
+                        <a href="#">Забронировать сейчас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="min-width">
+                    <div class="top">
+                        <ul class="menu">
+                            <span>Выводить:</span>
+                            <li class="servises">
+                            <a class="dashed" href="#">по дате регистрации</a>
+                                <ul class="submenu">
+                                    <li><a href="#">по юрисдикции</a></li>
+                                    <li><a href="#">по цене</a></li>
+                                    <li><a href="#">по алфавиту</a></li>
+                                    <li><a href="#">по дате добавления</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h1>Готовые компании</h1>
+                    </div>
+                    <div class="cols">
+                        <div class="box">
+                            <h1 class="title">Китай</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <div class="service">Номинальная сервис</div>
+                                </div>
+                                <div class="price">1050$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h1 class="title">Доминикана</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <div class="service">Номинальная сервис</div>
+                                </div>
+                                <div class="price">2150$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h1 class="title">Каймановы острова</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <!--<div class="service">Номинальная сервис</div><-->
+                                </div>
+                                <div class="price">2950$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <div class="box">
+                            <h1 class="title">Сент-Люсия</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <div class="service">Номинальная сервис</div>
+                                </div>
+                                <div class="price">1790$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h1 class="title">Сент-Винсент и Гренадины</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <div class="service">Номинальная сервис</div>
+                                </div>
+                                <div class="price">1370$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h1 class="title">Вануату</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <div class="service">Номинальная сервис</div>
+                                </div>
+                                <div class="price">1770$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <div class="box">
+                            <h1 class="title">Доминикана</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <div class="service">Номинальная сервис</div>
+                                </div>
+                                <div class="price">2170$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h1 class="title">Британские Виргинские острова</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <!--<div class="service">Номинальная сервис</div><-->
+                                </div>
+                                <div class="price">1350$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h1 class="title">Британские Виргинские острова</h1>
+                            <div class="img-holder">
+                                <div class="img-wrap">
+                                    <img src="images/img.png" alt=""/>
+                                    <div class="service">Номинальная сервис</div>
+                                </div>
+                                <div class="price">1990$</div>
+                            </div>
+                            <div class="data-holder">
+                                <div class="date">
+                                    <div class="small-title">Дата регистрации:</div>
+                                    28.07.2014
+                                </div>
+                                <div class="company-name">
+                                    <div class="small-title">Название:</div>
+                                    Farnessa Enterprise Ltd.
+                                </div>
+                                <div class="button-holder">
+                                    <div class="small-title">Поддержка компании - 1100$</div>
+                                    <a class="reserve" href="#">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="all-company" href="#">Показать еще компании</a>
+                </div>
+                <!--end min-width-->
+            </div>
+            <!--end content-->
+        </div>
+        <!--end container-->
+        <footer>
+            <div class="min-width">
+                <div class="contact">
+                    <h1>Контакты</h1>
+                    <p><span>Санкт-Петербург:</span>
+                        Россия, 191180, г. Санкт-Петербург, </br>
+                        Загородный проспект, д. 27/21 </br>
+                        помещение 23 – Н </br>
+                        +7 (812) 331-61-77 </br>
+                    </p>
+                    <p><span>Москва:</span>
+                        Россия, 107078, г. Москва, </br>
+                        Ул. Садовая - Спасская, </br>
+                        д. 20 стр. 1 офис 717 </br>
+                        +7 (495) 660-37-91 </br>
+                    </p>
+                    <h1>Поделиться в соц сетях</h1>
+                    <ul class="social">
+                        <li><a href="#" class="vk"></a></li>
+                        <li><a href="#" class="ok"></a></li>
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="google"></a></li>
+                    </ul>
+                </div>
+                <div class="feedback">
+                    <h1>Oбратная связь </h1>
+                    <form action="">
+                        <p>Имя</p>
+                        <input type="text" value="Иван"
+                           onfocus="if (this.value=='Иван') this.value='' "
+                           onblur="if (this.value==''){this.value='Иван'}" />
+                        <p>E-mail</p>
+                        <input type="text" value="general-electric@gmail.com"
+                        onfocus="if (this.value=='general-electric@gmail.com') this.value='' "
+                        onblur="if (this.value==''){this.value='general-electric@gmail.com'}" />
+                        <p>Сообщение</p>
+                        <input class="textarea" type="text" value="Хочу купить компанию"
+                        onfocus="if (this.value=='Хочу купить компанию') this.value='' "
+                        onblur="if (this.value==''){this.value='Хочу купить компанию'}" />
+
+                    </form>
+                    <button>Отправить</button>
+                </div>
+
+                <div class="menu">
+                    <h1>Меню</h1>
+                    <ul>
+                        <li><a href="#">Готовые компании</a></li>
+                        <li><a href="#">Счет в банке</a></li>
+                        <li><a href="#">Поиск</a></li>
+                        <li><a href="#">Правила покупки компаний</a></li>
+                        <li><a href="#">Политика конфиденциальности </a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                        <li><a href="#">Вход</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!--end wrap-->
+</body>
+</html>
